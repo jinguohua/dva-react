@@ -1,0 +1,60 @@
+.ui-loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5000;
+    transition: opacity ease 0.55s;
+    background: rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    .indicator {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -50px 0 0 -50px;
+        width: 100px;
+        height: 100px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        color: #fff;
+        font-size: 14px;
+        &:after {
+            content: "";
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            top: 30px;
+            left: 30px;
+            border: solid 4px;
+            border-color: transparent #ffffff transparent #ffffff;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            animation: rotate 0.68s ease-out infinite;
+            -webkit-animation: rotate 0.68s ease-out infinite;
+        }
+    }
+}
+
+.ui-loading-show {
+    opacity: 1;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}

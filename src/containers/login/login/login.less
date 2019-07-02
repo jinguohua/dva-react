@@ -1,0 +1,113 @@
+@import "../../../../assets/css/control";
+
+.login-container {
+    position: relative;
+    height: 100vh;
+    .login-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('http://pre.caibeike.net/crm/static/ace/css/images/meteorshower2.jpg') repeat #394557;
+        background-size: 100% 100%;
+    }
+    .login-header {
+        position: relative;
+        padding-top: 50px;
+        text-align: center;
+        .title {
+            height: 50px;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        .logo {
+            padding-left:45px;
+            color: #dd5a43;
+            background: url('http://static.caibeike.com/i/8259cb48c22bbdacf684a287e7496257-Rzwy2T') 0 50% no-repeat;
+            background-size: contain;
+        }
+        .crm {
+            padding-left:10px;
+            color: #fff;
+        }
+        .subTitle {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 18px;
+            color: #478fca;
+        }
+    }
+    .login-content {
+        position: relative;
+        margin: 20px auto;
+        padding: 8px;
+        max-width: 420px;
+        background: #394557;
+        border-radius: 2px;
+    }
+    .login-signup-fields {
+        padding: 50px 30px 30px;
+        background: #F7F7F7;
+        .item-fields {
+            position: relative;
+            margin-bottom: 15px;
+            height: 40px;
+            width: 100%;
+            background: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid #C3C3C3;
+        }
+        .item-fields-label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 100%;
+        }
+        .name {
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAh1BMVEUAAACPk5aPk5aQk5aPk5WPk5aRkZGPk5aPk5aPk5aPk5aPk5aPk5aPk5ePk5eOlJWOjpWGjZuPk5aOk5aPkpaPk5ePk5aPk5aPk5aOk5ePlZaRkpWPk5aPk5aPk5aPk5aPk5aPk5eQk5ePk5aOkpePk5WPk5aQk5aQk5aPk5WQk5aQlJaPk5YOP9moAAAALHRSTlMA+fURF+4E1LrH6eKITEUlDAfZaTjAtKWbMy4eqZ9vY1wplY95dVDOVj6uf5VlOf0AAAKESURBVFjDpVfZtqowDC3zJIgiKCA4z/n/77ursV5R27Sssx+b7LQZSAJTYpZNqrln2XHUFVM2GnXnwQCXPh9F31Xwjbj3jen+wwIJgsaQ75T/OUkZhhcbBOyNEb8NhPry7DBEcxJHcDTgu3NArNvhaSpOT1r+LELFefMTF0BcdQYOqBY6v5IzxsLTlMQC+ZUvldlomzZwwXwpimaL1s8UP8XwK1+5x6KkDIRcY6KuECzvG5FCDJOjVjhyhZVaXhAPQOQ2v0EtX3MDRMVrNXi5xYzChhvYKKtQn+eadNIlQ4RwuEqnkk5J8wifq9z/amD9Bxdc0gWfd7JS/7E9yDR6ZO/suYGtUtxx8YIygN16R5fJngoBdzIhsszldqtWmPAbDsQNdzoPLfakWhdkqyY/pZJpO0riyoUnIPsJYodDLZI2xTPylwT7fUsgCWSBtmN8HZ1p1Eu/E9ThuXUzHU0QLYaHRQyIrclwDkGY6BsfD9K9BwhLz8frOnjBSoI5khHejRniGoMEVctM4e4l/CQ1pbcrC6SYG4UgP1igRJBp+VnyvnD92KZZdi32pQ0vrBy6Zx5AICraYWLS1ctGUpuUwLL5lfUiNfZVHfwAEGEjj85RvOJE8z31NjgtKQvOkx+QW9QEEIUsfk//w1xTpJhkK1Ptd9VMm2fFtpciv0Q+jezZtPyvAMbov8MMsJWtzUvMsHTkKLy1PpyoRWzN4Ec/Q75Et8x/aKyvIXoD+cShy6H6isCdmSOPP6a0K140AsePOb6R7dA0HFxZZ0MPejYKy+Hmj01o5M/peTAncyDWDnLtFqSdIgc0sJjc91YxGWtg9S6djIohnchnW0ipFZ7+OUkZ+wfA24xsDqC6iAAAAABJRU5ErkJggg==') 10px 50% no-repeat;
+            background-size: auto 18px;
+        }
+        .password {
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAeFBMVEUAAACOk5aOlpaQlJWPkpaPk5aOlJaPk5aSkpOPk5aPk5aPk5aQk5aKlZqPk5ePk5aNk5iPk5aPk5aPk5WPk5aPk5aVlZWPk5aPk5aOkpaPk5aPlJaOlJeQk5WPk5ePlJaPlJaPlJaQlJaQk5aOk5aPlJWOkpePk5bISNXjAAAAJ3RSTlMAzCGMm1Bf1hb5kvNWBkd4J+DEZeaFC+xtQIBqWBGmMnE5vrOqpLwnmFSKAAABkUlEQVRYw+2Wy5aDIAyGldqpt2ptvd9tO8P7v+EQjrOwCMRh5Tn+S5N8QgIJlkJ5VfqO48dn1/qHru3Lo3+yy25r/COhCwVZviWc3KmgpMLHR8G88tPYnsvsOe8lxsaHPCCoiTWrmzd0Qv6fxzvuIqWxh14DKZin13x+nlIgRAjAE+KjFTAQ0k6fAMrUrFkm2IWvBVyYV79uKmFtri6D4EQkhxPgtQbwDctUbS/RAKAEg/R+wAG7KeNvkGm5+c3MD20Nerm50dZhVB/YMzO/lICaeYxy88DMP0pABptUp+h+ANSAqw9dg0gVQZ+TdteuvlCUUue2ekgKipYXi/Et3SRfSA9vmoWNUMoJ4Qegh0beXHFtO4G+sPTNPQ5FikBfWA6qihcYrZMwI1qeF7RCwf1LN7jEvuDsBTBEZoCS0rcRwGbfcxMA3E/3AByA/QOM70JDaW/YDypr7y0NBzCfC+aTKQ82z8ZJfKUHJXI6p+J0BiggLrZeBQWFYl7wWi9ZtOmNZPRKS3wifSe6RK9l9n4BT/R4eV5y/iUAAAAASUVORK5CYII=') 10px 50% no-repeat;
+            background-size: auto 19px;
+        }
+        .item-fields-input {
+            padding: 4px 10px 4px 70px;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+        }
+    }
+    .tips {
+        text-align: right;
+    }
+    .item-submit {
+        padding: 20px 0;
+        text-align: center;
+        .submit {
+            position: relative;
+            width: 120px;
+            height: 45px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            background: green;
+            background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+            -webkit-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            border-radius: 2px;
+            &:active {
+                top: 2px;
+                -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+}

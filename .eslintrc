@@ -1,0 +1,63 @@
+{
+    "parser": "babel-eslint",
+    "extends": "",
+    "plugins": [
+        "react",
+        "react-hooks"
+    ],
+    "env": {
+        "browser": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "globals": {
+        "__DEV__": false,
+        "__TEST__": false,
+        "__PROD__": false,
+        "__COVERAGE__": false
+    },
+    "rules": {
+        "quotes": [
+            2,
+            "single"
+        ],
+        "indent": [
+            2,
+            4
+        ],
+        "eqeqeq": 2,
+        "no-alert": 2,
+        "no-const-assign": 2,
+        "no-eval": 2,
+        "no-void": 2,
+        "no-with": 2,
+        "no-unused-vars": 2,
+        "jsx-quotes": [
+            2,
+            "prefer-double"
+        ],
+        "quote-props": [
+            2,
+            "as-needed"
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "space-infix-ops": [
+            2,
+            {
+                "int32Hint": false
+            }
+        ],
+        "no-var": 2,
+        "react/jsx-uses-vars": 2,
+        "react/react-in-jsx-scope": 2,
+        "react-hooks/rules-of-hooks": "error"
+    }
+}
