@@ -19,7 +19,7 @@ class UserManagement extends React.Component {
 
     static getDerivedStateFromProps(nextProps, prevState) {
         const { userList } = nextProps;
-        console.log(userList, 'userList-static');
+        console.log(userList, 'static-component-data');
         if (userList) {
             return {
                 dataSource: userList.result,
@@ -29,20 +29,17 @@ class UserManagement extends React.Component {
         return null;
     }
 
-
     /**
      * 查询列表
      */
     accountListAction = () => {
         let { userName, status, limit, current } = this.state, offset = (current - 1) * limit;
-        console.log(this, 'this.props')
         const { dispatch }: any = this.props;
         dispatch({
             type: 'rms/queryAccountList',
             payload: { userName: Trim(userName), status, offset, limit }
         }).then(res => {
             console.log(res, 'resres');
-
         })
     }
 
@@ -134,8 +131,7 @@ class UserManagement extends React.Component {
     }
 }
 
-function mapStateToProps({ rms: { userList } }: any) {
-    console.log(userList, 'connect data')
+function mapStateToProps({ rms: { userList } }) {
     return ({ userList })
 }
 export default connect(mapStateToProps)(UserManagement) 

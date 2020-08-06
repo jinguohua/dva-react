@@ -10,14 +10,17 @@ const initialState = {
 const effects = {
     *queryAccountList({ payload }: any, { call, put }: any) {
         let response = yield call(Request.postJson, Address.ajaxPath + '/account/list.html', payload);
-        console.log(response, 'respose')
+
+        console.log(response, 'effects-data')
         if (response && response.result && response.result.length > 0) {
             response.result = response.result.map(item => Object.assign({}, item, { key: item.userId }))
         }
+
         yield put({
             type: 'updataUserList',
             payload: response
         })
+
     },
 };
 

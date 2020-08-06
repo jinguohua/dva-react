@@ -1,4 +1,5 @@
-import userList from './right'
+import userList from './rightmanage/right'
+
 export default {
     namespace: 'rms',
 
